@@ -7,7 +7,7 @@ def insert(lst):
     lst.append(ele)
     return lst
 
-# print(insert(lst1))
+
 def delete(lst):
     ele=input("Enter element to be deleted: ")
     if ele in lst:
@@ -16,7 +16,7 @@ def delete(lst):
         print("Element not found !")    
     return lst    
 
-# print(delete(lst1))
+
 
 def present(lst):
     ele=input("Enter element to check: ")
@@ -26,21 +26,12 @@ def present(lst):
         print("FALSE")
     return 0        
 
-# present(lst1)
+
 
 def size(lst):
     print("Number of elements in list:",len(lst))
     return 0
 
-# size(lst1)
-
-# lst2=input("Enter elements for set1 (with space): ")
-# lst2=lst2.split(" ")
-# print(lst2)
-
-# lst3=input("Enter elements for set2 (with space): ")
-# lst3=lst3.split(" ")
-# print(lst3)
 
 def inter(lst,lst0):
     a=[]
@@ -48,8 +39,6 @@ def inter(lst,lst0):
         if i in lst0:
             a.append(i)
     return a
-
-# print(inter(lst2,lst3))
 
 def dup(lst):
     newlst=[]
@@ -67,7 +56,6 @@ def union(lst,lst0):
     a=dup(a)    
     return a
 
-# print(union(lst2,lst3))
 
 def diff(lst,lst0):
     a=[]
@@ -75,8 +63,6 @@ def diff(lst,lst0):
         if i not in lst0:
             a.append(i)
     return a
-
-# print(diff(lst2,lst3))
 
 def subset(lst,lst0):
     s=0
@@ -91,7 +77,6 @@ def subset(lst,lst0):
         print("set 2 is not subset of set 1")            
     return 0
 
-# subset(lst2,lst3)
 flag=1
 while flag==1:
     print("""
