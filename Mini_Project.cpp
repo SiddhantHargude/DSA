@@ -21,7 +21,6 @@ public:
     int getRollNo() { return rollNo; }
 };
 
-// Static members initialization
 float Student::attendanceOutOf = 10;
 float Student::unitTestOutOf = 30;
 float Student::achievementsOutOf = 10;
@@ -95,8 +94,6 @@ void displayMenu() {
 int main() {
     vector<Student> students;
     int choice;
-
-    // Input 'out of' values once
     cout << "Enter Outof field for Assessment:\n";
     cout << "Attendance Marks: ";
     cin >> Student::attendanceOutOf;
